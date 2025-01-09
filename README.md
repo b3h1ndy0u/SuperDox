@@ -1,8 +1,11 @@
 # ClatScope Info Tool
-ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DNS, WHOIS, phone, email, and data breach information. Perfect for investigators, pentesters, or anyone looking for a quick reconnaissance script.
+ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DNS, WHOIS, phone, email, data breach information and more. Perfect for investigators, pentesters, or anyone looking for a quick reconnaissance script.
+
+![osint](https://github.com/user-attachments/assets/cb01cb80-287c-4ddd-951e-3c390e66c97b)
+
 
 **Version:** BETA  
-**Author:** Josh Clatney (Ethical Pentesting Enthusiast)
+**Author:** Joshua M Clatney aka Clats97 (Ethical Pentesting Enthusiast)
 
 ## Description
 ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility script that queries public APIs, DNS records, and other online resources to gather and display information about IPs, domains, emails, phone numbers, and more. You will need a Google Custom Search API and a Have I Been Pwned API to take advantage of all the features ClatScope has to offer.
@@ -34,7 +37,7 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
     python clatscope_info_tool.py
     
 ## Usage
-When you run the script, it will present you with a menu. Simply type the number corresponding to the function you wish to use and follow the on-screen prompts. For example:
+When you run the script, it will present you with a menu. Simply type the number corresponding to the function you wish to use, and follow the on-screen prompts. For example:
 
 - **IP Info Search** – Option [1]
 - **Deep Account Search** – Option [2]
