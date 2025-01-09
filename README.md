@@ -41,6 +41,8 @@ When you run the script, it will present you with a menu. Simply type the number
 - **DNS Search** – Option [4]
 - etc.
 
+- **IN ORDER FOR THE PASSWORD STRENGTH ANALYZER TO WORK PROPERLY, YOU MUST OPEN CLATSCOPE INFO TOOL IN THE FOLDER THAT HAS "PASSWORDS.TXT"** 
+
 ## Contributing
 1. Fork this repository  
 2. Create a new branch: `git checkout -b feature/YourFeature`  
