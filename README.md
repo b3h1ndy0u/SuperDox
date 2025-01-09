@@ -17,7 +17,7 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 4. **DNS & Reverse DNS** – Retrieve DNS records (A, CNAME, MX, NS) and PTR records.  
 5. **Email Lookup** – Check MX records, validate format, parse email headers for IP addresses, and more.
 6. **Email Breach Search** - Checks Have I Been Pwned to determine if an email address has been compromised.
-7. **Email Header Analisys** - Analyzes an email header and extracts data.
+7. **Email Header Analysis** - Analyzes an email header and extracts data.
 8. **Person Search** - Look up public details about a person.   
 9. **WHOIS Lookup** – Fetch domain registration details.  
 10. **Password Strength Check** – Rate your password’s strength based on multiple criteria.  
