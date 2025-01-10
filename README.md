@@ -49,11 +49,8 @@ When you run the script, it will present you with a menu. Simply type the number
 - You will need to enter your own Google Custom Sesarch & Have I been Pwned API key to use all the features in this tool.
 
 ## Contributing
-1. Fork this repository  
-2. Create a new branch: `git checkout -b feature/YourFeature`  
-3. Commit your changes: `git commit -m 'Add some feature'`  
-4. Push to the branch: `git push origin feature/YourFeature`  
-5. Create a new Pull Request  
+1. Fork this repository`
+2. Create a new Pull Request  
 
 We welcome any improvements or additional OSINT features!
 
