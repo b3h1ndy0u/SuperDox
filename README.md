@@ -1,7 +1,8 @@
 # ClatScope Info Tool
 ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DNS, WHOIS, phone, email, usernames, person related data, password strength, data breach information and more. Perfect for investigators, pentesters, or anyone looking for a quick reconnaissance script.
 
-![osint](https://github.com/user-attachments/assets/cb01cb80-287c-4ddd-951e-3c390e66c97b)
+![clatscope](https://github.com/user-attachments/assets/0bb01589-79db-4b46-8637-43832106ac2b)
+
 
 
 **Version:** BETA  
