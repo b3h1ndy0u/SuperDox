@@ -44,7 +44,9 @@ When you run the script, it will present you with a menu. Simply type the number
 - **DNS Search** – Option [4]
 - etc.
 
-- **IN ORDER FOR THE PASSWORD STRENGTH ANALYZER TO WORK PROPERLY, YOU MUST OPEN CLATSCOPE INFO TOOL IN THE FOLDER THAT HAS "PASSWORDS.TXT"** 
+- **IN ORDER FOR THE PASSWORD STRENGTH ANALYZER TO WORK PROPERLY, YOU MUST OPEN CLATSCOPE INFO TOOL IN THE FOLDER THAT HAS "PASSWORDS.TXT"**
+
+- You will need to enter your own Google Custom Sesarch & Have I been Pwned API key to use all the features in this tool.
 
 ## Contributing
 1. Fork this repository  
