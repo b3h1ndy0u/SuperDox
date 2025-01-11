@@ -25,7 +25,7 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 
 5.	**Domain / Website Lookups:**
 
--DNS record queries (A, CNAME, MX, NS).
+- DNS record queries (A, CNAME, MX, NS).
 - WHOIS details (registrar, creation date, etc)
 -IS details (registrar, creation date, etc.).
 -SSL certificate analysis.
