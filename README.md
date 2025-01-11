@@ -1,13 +1,47 @@
 # ClatScope Info Tool
 ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DNS, WHOIS, phone, email, usernames, person related data, password strength, data breach information and more. Perfect for investigators, pentesters, or anyone looking for a quick reconnaissance script.
 
-**THE CURRENT VERSION THAT WAS PRE RELEASED IS NOT COMPLETE AND IS A BETA VERSION. THERE ARE MINOR CHANGES AND OPTIMIZATIONS CURRENTLY BEING WORKED ON. THE COMPLETE, FIRST RELEASE SHOULD BE PUBLISHED WITHIN THE WEEK (JAN 10, 2025)**
+ClatScope is an OSINT tool that performs various lookups and analyses on provided data:
 
-![clatscope](https://github.com/user-attachments/assets/0bb01589-79db-4b46-8637-43832106ac2b)
+1.	**IP Address Lookups:**
+-Retrieves IP geolocation details, ISP, and region.
+- Performs DNSBL checks to see if an IP is blacklisted.
+
+2.	**Phone Number Lookups:**
+-Fetches basic phone number details (region, carrier).
+- Conducts a reverse phone lookup via Google search (Custom Search API).
+
+3.	**Email Lookups and Analyses:**
+- Checks email validity and existence of mail exchanger (MX) records.
+- Performs data breach checks against Have I Been Pwned (HIBP).
+-Analyzes raw email headers (extracting IP addresses, SPF, DKIM, DMARC alignment, etc.).
+
+4.	**Username Searches:**
+- Searches across multiple platforms (e.g., Facebook, Twitter, Instagram, etc.) to see if a username exists.
+
+5.	**Domain / Website Lookups:**
+-DNS record queries (A, CNAME, MX, NS).
+- WHOIS details (registrar, creation date, etc)
+-IS details (registrar, creation date, etc.).
+-SSL certificate analysis.
+-Robots.txt and sitemap.xml retrieval to discover site structure.
+-Webpage metadata extraction (title, meta keywords, meta description).
+
+7.	**Password Strength Checking:**
+- Evaluates complexity based on length, character variety, and common word usage.
+
+8.	**Additional Features:**
+- Person name searches (via Google’s Custom Search API) to get text from resulting pages.
+- Reverse DNS lookups for IP addresses.
+- Settings menu to change color scheme.
+
+Throughout the script, a textual UI is presented, prompting the user for inputs (e.g., IP address, phone number). Results are printed in styled ASCII frames using the pystyle library for aesthetics.
 
 
+![clatscope](https://github.com/user-attachments/assets/e80441a8-bfcb-48fd-9414-6806af4618dc)
 
-**Version:** BETA  
+
+**Version:** 1.00  
 **Author:** Joshua M Clatney aka Clats97 (Ethical Pentesting Enthusiast)
 
 ## Description
@@ -50,6 +84,90 @@ When you run the script, it will present you with a menu. Simply type the number
 - **IN ORDER FOR THE PASSWORD STRENGTH ANALYZER TO WORK PROPERLY, YOU MUST OPEN CLATSCOPE INFO TOOL IN THE FOLDER THAT HAS "PASSWORDS.TXT"**
 
 - You will need to enter your own Google Custom Sesarch & Have I been Pwned API key to use all the features in this tool.
+- If you want to use the password strength checker against a dictionary or known common-passwords file, place your dictionary file as passwords.txt in the same directory as the script.
+- The script references Google Custom Search API keys (API_KEY, CX, and CLIENT_ID) and HIBP API key. If you want to use the features that query external services (like Google search or HIBP), you must obtain valid keys and place them in the script. **Important:** If you do not have valid API keys, the related external queries (e.g. person search, reverse phone lookup) will fail or return errors.
+
+
+**Below is a closer look at what each function in the script accomplishes:**
+
+1.	**Main Menu & main() Function**
+- Displays the ASCII-based menu.
+- Repeatedly prompts for user input.
+- Clalls the relevant function (like ip_info(ip) or deep_account_search(nickname)) based on the menu choice.
+
+2.	**ip_info(ip)**
+- Uses requests.get("https://ipinfo.io/{ip}/json") to fetch IP-related information.
+- Displays city, region, country, ISP (org), approximate location, etc.
+
+3.	**deep_account_search(nickname)**
+-Iterates over a large list of possible platform URL formats (e.g., https://twitter.com/{}, https://reddit.com/user/{}, etc.).
+- Sends asynchronous HTTP requests with ThreadPoolExecutor to quickly check which URLs respond with status code 200.
+- Prints whether each potential profile is “Found” or “Not Found.”
+
+4.	**phone_info(phone_number)**
+- Parses the phone number using phonenumbers.parse(...).
+- Receives geocoding (country, region) and the carrier operator.
+- Validates whether the number format is correct.
+
+5.	**reverse_phone_lookup(phone_number)**
+- Uses Google’s Custom Search API to search references to the phone number on the internet.
+-Fetches text from each top link and displays them.
+
+6.	**dns_lookup(domain)**
+- Uses the dns.resolver.resolve() method to query A, CNAME, MX, and NS records.
+- Shows “No records found” if none exist.
+
+7.	**email_lookup(email)**
+- Validates email format with email_validator.
+- Checks DNS MX records for the domain.
+- Declares “Likely Valid” if MX records are found, or “Might be invalid” otherwise.
+
+8.	**person_search(first_name, last_name, city)**
+-Leverages Google’s Custom Search API to look for references to a person’s name + location.
+-Fetches page text, then displays top results in a nicely formatted table.
+
+9.	**analyze_email_header(raw_headers**
+- Parses raw email headers using Python’s built-in email.parser.
+- Extracts IP addresses from any “Received” lines.
+- Performs geolocation on each IP.
+- Checks for SPF, DKIM, and DMARC results in Authentication-Results fields.
+
+10.	**haveibeenpwned_check(email)**
+- Calls the HIBP v3 API.
+- If breaches are found, prints each breach name, domain, date, data classes.
+- Otherwise, declares “No breaches found.”
+
+11.	**whois_lookup(domain)**
+- Uses Python’s whois to retrieve domain registration data.
+- Shows registrar name, creation/expiration dates, name servers, etc.
+
+12.	**password_strength_tool() / check_password_strength(password)**
+- Checks password length and usage of uppercase, lowercase, digits, and symbols.
+- Looks for common words in the passwords.txt file if present.
+- Outputs “Weak,” “Moderate,” or “Strong.”
+
+13.	**check_ssl_cert(domain)**
+- Creates a secure socket connection on port 443 to retrieve the SSL certificate.
+- Prints the certificate issuer, validity range, etc.
+
+14.	**check_robots_and_sitemap(domain)**
+- Tries to retrieve robots.txt and sitemap.xml from https://{domain}/.
+- Prints the HTTP status code and the first few lines of the file, if it exists.
+
+15.	**check_dnsbl(ip_address)**
+- Reverses the IP (e.g., 1.2.3.4 → 4.3.2.1) and checks several DNS blacklists by querying
+4.3.2.1.zen.spamhaus.org, etc.
+- If an answer is returned, the IP is blacklisted on that DNSBL.
+
+16.	**fetch_webpage_metadata(url**
+- Fetches a webpage’s <title>, meta description, and meta keywords to provide quick SEO context.
+
+17.	**settings() / change_color()**
+- Provides a submenu to alter the default console color for script output.
+________________________________________
+
+
+**THIS TOOL IS NOT PERFECT. THERE IS STILL ROOM FOR IMPROVMENT, AND I AM WORKING ON ADDING NEW FEATRURES AND REFINING IT. SOMETIMES A USERNAME SEARH]CH WILL RESULLT IN A FALSE PPOSITIVE AND/OR THE URL WILL NOT RESOLVE. IT HAS BEEN TESTED AND IS ACCURATE, BUT NOT 100% ACCURATE. VERIFY THE OUTPUTS IF YOU ARE NOT SURE.**
 
 ## Contributing
 1. Fork this repository`
