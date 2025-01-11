@@ -130,8 +130,8 @@ When you run the script, it will present you with a menu. Simply type the number
 - Declares “Likely Valid” if MX records are found, or “Might be invalid” otherwise.
 
 8.	**person_search(first_name, last_name, city)**
--Leverages Google’s Custom Search API to look for references to a person’s name + location.
--Fetches page text, then displays top results in a nicely formatted table.
+- Leverages Google’s Custom Search API to look for references to a person’s name + location.
+- Fetches page text, then displays top results in a nicely formatted table.
 
 9.	**analyze_email_header(raw_headers**
 - Parses raw email headers using Python’s built-in email.parser.
