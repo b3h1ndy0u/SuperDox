@@ -5,7 +5,7 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 
 1.	**IP Address Lookups:**
 
--Retrieves IP geolocation details, ISP, and region.
+- Retrieves IP geolocation details, ISP, and region.
 - Performs DNSBL checks to see if an IP is blacklisted.
 
 2.	**Phone Number Lookups:**
