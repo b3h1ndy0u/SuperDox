@@ -4,22 +4,27 @@ ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DN
 ClatScope is an OSINT tool that performs various lookups and analyses on provided data:
 
 1.	**IP Address Lookups:**
+
 -Retrieves IP geolocation details, ISP, and region.
 - Performs DNSBL checks to see if an IP is blacklisted.
 
 2.	**Phone Number Lookups:**
+
 -Fetches basic phone number details (region, carrier).
 - Conducts a reverse phone lookup via Google search (Custom Search API).
 
-3.	**Email Lookups and Analyses:**
+3.	**Email Lookups and Analysis:**
+
 - Checks email validity and existence of mail exchanger (MX) records.
 - Performs data breach checks against Have I Been Pwned (HIBP).
 -Analyzes raw email headers (extracting IP addresses, SPF, DKIM, DMARC alignment, etc.).
 
 4.	**Username Searches:**
+
 - Searches across multiple platforms (e.g., Facebook, Twitter, Instagram, etc.) to see if a username exists.
 
 5.	**Domain / Website Lookups:**
+
 -DNS record queries (A, CNAME, MX, NS).
 - WHOIS details (registrar, creation date, etc)
 -IS details (registrar, creation date, etc.).
@@ -28,9 +33,11 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 -Webpage metadata extraction (title, meta keywords, meta description).
 
 7.	**Password Strength Checking:**
+
 - Evaluates complexity based on length, character variety, and common word usage.
 
 8.	**Additional Features:**
+
 - Person name searches (via Google’s Custom Search API) to get text from resulting pages.
 - Reverse DNS lookups for IP addresses.
 - Settings menu to change color scheme.
