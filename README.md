@@ -10,7 +10,7 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 
 2.	**Phone Number Lookups:**
 
--Fetches basic phone number details (region, carrier).
+- Fetches basic phone number details (region, carrier).
 - Conducts a reverse phone lookup via Google search (Custom Search API).
 
 3.	**Email Lookups and Analysis:**
