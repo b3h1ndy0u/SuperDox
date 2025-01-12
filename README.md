@@ -75,7 +75,7 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 ## Installation
 1. **Clone the Repository**:
     
-    git clone https://github.com/Clats97/ClatScope-Info-Tool.git
+    git clone https://github.com/Clats97/ClatScope.git
     
 2. **Install Dependencies**:
     
