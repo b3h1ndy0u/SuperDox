@@ -31,10 +31,10 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 
 - DNS record queries (A, CNAME, MX, NS).
 - WHOIS details (registrar, creation date, etc)
--IS details (registrar, creation date, etc.).
--SSL certificate analysis.
--Robots.txt and sitemap.xml retrieval to discover site structure.
--Webpage metadata extraction (title, meta keywords, meta description).
+- IS details (registrar, creation date, etc.).
+- SSL certificate analysis.
+- Robots.txt and sitemap.xml retrieval to discover site structure.
+- Webpage metadata extraction (title, meta keywords, meta description).
 
 7.	**Password Strength Checking:**
 
