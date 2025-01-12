@@ -64,8 +64,13 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 7. **Email Header Analysis** - Analyzes an email header and extracts data.
 8. **Person Search** - Look up public details about a person.   
 9. **WHOIS Lookup** – Fetch domain registration details.  
-10. **Password Strength Check** – Rate your password’s strength based on multiple criteria.  
-11. **Theme/Color Settings** – Adjust console output color.
+10. **Password Strength Check** – Rate your password’s strength based on multiple criteria.
+11. **Reverse Phone Search** - Gets references from a number and extracts data from Google.
+12. **Robots.txt / Sitemap.xml Check** - Finds a websites robots.txt and Sitemp.xml files.
+13. **SSL Certificate Search** - Finds a webpage's SSL certificate information 
+14. **DNSBL Search** - Gets blacklist information on a URL
+15. **Website Metadata Fetch** - Retrieves meta tags and more from a website.  
+16. **Theme/Color Settings** – Adjust console output color.
 
 ## Installation
 1. **Clone the Repository**:
