@@ -3,6 +3,7 @@ ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DN
 
 **DONT WANT TO SET UP YOUR GCS AND HIBP API TO GET FULL FUNCTIONALITY OF CLATSCOPE INFO TOOL? STARTING JANUARY 12, 2024 A SUBSCRIPTION SERVICE IS AVAILABLE. YOU WILL BE PROVIDED WITH A CUSTOM API KEY THAT LOGS IP ADDRESS, USER AGENT, USAGE, AND OTHER DETAILS TO ENSURE THERE IS NO UNAUTHORIZED ACCESS OR MISUSE. SHARING IS PROHIBITED AND WILL RESULT IN AN IMMEDIATE REVOCATION OF THE KEY. TURN OFF YOUR VPN WHEN USING IT TO PREVENT AN AUTOMATIC BAN FOR IMPOSSIBLE TRAVEL / SHARING. YOUR SUBSCRIPTIOON IS VALID FOR 30 DAYS. IF YOU RENEW, YOU WILL BE ISSUED A NEW KEY AT THE START OF YOUR RENEWAL. KEYS ARE ROTATED MONTHLY AND ARE SINGLE USE AND MONITORED. EMAIL SKYLINE92X@PM.ME FOR DETAILS AND / OR VISIT https://buymeacoffee.com/clats97/e/357348 TO SUBSCRIBE.**
 
+![clatscope](https://github.com/user-attachments/assets/e80441a8-bfcb-48fd-9414-6806af4618dc)
 
 ClatScope is an OSINT tool that performs various lookups and analyses on provided data:
 
@@ -48,7 +49,7 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 Throughout the script, a textual UI is presented, prompting the user for inputs (e.g., IP address, phone number). Results are printed in styled ASCII frames using the pystyle library for aesthetics.
 
 
-![clatscope](https://github.com/user-attachments/assets/e80441a8-bfcb-48fd-9414-6806af4618dc)
+
 
 
 **Version:** 1.00  
