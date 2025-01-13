@@ -84,8 +84,7 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
     pip install requests pystyle phonenumbers dnspython email_validator beautifulsoup4 whois 
    
 3. **Run the Script**:
-    bash
-    python clatscope_info_tool.py
+    Click on the Python file or open it in Visual Studio Code 
     
 ## Usage
 When you run the script, it will present you with a menu. Simply type the number corresponding to the function you wish to use, and follow the on-screen prompts. For example:
