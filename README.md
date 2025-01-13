@@ -50,10 +50,6 @@ ClatScope is an OSINT tool that performs various lookups and analyses on provide
 
 Throughout the script, a textual UI is presented, prompting the user for inputs (e.g., IP address, phone number). Results are printed in styled ASCII frames using the pystyle library for aesthetics.
 
-
-
-
-
 **Version:** 1.00  
 **Author:** Joshua M Clatney aka Clats97 (Ethical Pentesting Enthusiast)
 
@@ -84,7 +80,7 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
     git clone https://github.com/Clats97/ClatScope.git
     
 2. **Install Dependencies**:
-    
+    Open command prompt and:
     pip install requests pystyle phonenumbers dnspython email_validator beautifulsoup4 whois 
    
 3. **Run the Script**:
