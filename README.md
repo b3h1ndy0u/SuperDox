@@ -5,8 +5,7 @@ ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DN
 
 **DONT WANT TO SET UP YOUR GCS AND HIBP API TO GET FULL FUNCTIONALITY OF CLATSCOPE INFO TOOL? STARTING JANUARY 12, 2024 A SUBSCRIPTION SERVICE IS AVAILABLE. YOU WILL BE PROVIDED WITH A CUSTOM API KEY THAT LOGS IP ADDRESS, USER AGENT, USAGE, AND OTHER DETAILS TO ENSURE THERE IS NO UNAUTHORIZED ACCESS OR MISUSE. SHARING IS PROHIBITED AND WILL RESULT IN AN IMMEDIATE REVOCATION OF THE KEY. TURN OFF YOUR VPN WHEN USING IT TO PREVENT AN AUTOMATIC BAN FOR IMPOSSIBLE TRAVEL / SHARING. YOUR SUBSCRIPTION IS VALID FOR 30 DAYS. IF YOU RENEW, YOU WILL BE ISSUED A NEW KEY AT THE START OF YOUR RENEWAL. KEYS ARE ROTATED MONTHLY AND ARE SINGLE USE AND MONITORED. EMAIL SKYLINE92X@PM.ME FOR DETAILS AND / OR VISIT https://buymeacoffee.com/clats97/e/357348 TO SUBSCRIBE.**
 
-![osint](https://github.com/user-attachments/assets/fd0ff06f-c511-44e8-ac8b-e698dbac9034)
-
+![Screenshot 2025-01-14 161144](https://github.com/user-attachments/assets/947375f5-fe38-443e-bb2f-83b4393aa812)
 
 ClatScope is an OSINT tool that performs various lookups and analyses on provided data:
 
@@ -72,19 +71,23 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 12. **Robots.txt / Sitemap.xml Check** - Finds a websites robots.txt and Sitemp.xml files.
 13. **SSL Certificate Search** - Finds a webpage's SSL certificate information 
 14. **DNSBL Search** - Gets blacklist information on a URL
-15. **Website Metadata Fetch** - Retrieves meta tags and more from a website.  
-16. **Theme/Color Settings** – Adjust console output color.
+15. **Website Metadata Fetch** - Retrieves meta tags and more from a website.
+16. **Travel Risk Search** - Provides a detailed, 40 parameter analysis of a geographical location.
+17. **Botometer Search** - Helps identify possible X/Twitter bots. The lower the score, the lower probability it is not a bod. A higher score indicates a higher probability that the account is a bot.
+18. **Business Search** - Provides details about a business.
+19. **Theme/Color Settings** – Adjust console output color.
 
 ## Installation
-1. **Clone the Repository**:
+1. **Clone the Repository (or download the zip)**:
     
     git clone https://github.com/Clats97/ClatScope.git
     
 2. **Install Dependencies**:
-    Open command prompt and:
-    pip install requests pystyle phonenumbers dnspython email_validator beautifulsoup4 whois tqdm openai==0.28
-   
-3. **Run the Script**:
+    Open command prompt and write:
+
+   pip install requests pystyle phonenumbers dnspython email-validator beautifulsoup4 whois tqdm openai==0.28
+
+   3. **Run the Script**:
     Click on the Python file or open it in Visual Studio Code 
     
 ## Usage
@@ -97,9 +100,10 @@ When you run the script, it will present you with a menu. Simply type the number
 
 - **IN ORDER FOR THE PASSWORD STRENGTH ANALYZER TO WORK PROPERLY, YOU MUST OPEN CLATSCOPE INFO TOOL IN THE FOLDER THAT HAS "PASSWORDS.TXT"**
 
-- You will need to enter your own Google Custom Sesarch & Have I been Pwned API key to use all the features in this tool.
-- If you want to use the password strength checker against a dictionary or known common-passwords file, place your dictionary file as passwords.txt in the same directory as the script.
-- The script references Google Custom Search API keys (API_KEY, CX, and CLIENT_ID) and HIBP API key. If you want to use the features that query external services (like Google search or HIBP), you must obtain valid keys and place them in the script. **Important:** If you do not have valid API keys, the related external queries (e.g. person search, reverse phone lookup) will fail or return errors.
+- You will need to enter your own Google Custom Search, OpenAI, Botometer, Perplexity & a Have I been Pwned API key to use all the features in this tool (unless you subscribe to the above mentioned service).
+- If you want to use the password strength checker against a dictionary or known common-passwords file, place your dictionary file as passwords.txt in the same directory as the script. There is already a dictionary file in the installation package with millions of common passwords.
+- The script references a Google Custom Search API key (API_KEY, CX, and CLIENT_ID), an OpenAI API key, a Perplexity API key, a Botometer API key, and HIBP API key. If you want to use the features that query external services (like Google search or HIBP), you must obtain valid keys and place them in the script.
+- **Important:** If you do not have valid API keys, the related external queries (e.g. person search, reverse phone lookup, business search, travel risk search, Botometer search) will fail or return errors.
 
 
 **Below is a closer look at what each function in the script accomplishes:**
@@ -178,10 +182,19 @@ When you run the script, it will present you with a menu. Simply type the number
 
 17.	**settings() / change_color()**
 - Provides a submenu to alter the default console color for script output.
+
+18. **travel_risk_search**
+- Provides over 40 references to risks while travelling abroad.
+
+19. **botometer_search**
+- Identifies potential X/Twitter bot accounts.
+
+20. **business_search**
+- Retrieves information about a business.
 ________________________________________
 
 
-**THIS TOOL IS NOT PERFECT. THERE IS STILL ROOM FOR IMPROVMENT, AND I AM WORKING ON ADDING NEW FEATURES AND REFINEMENTS. SOMETIMES A USERNAME SEARCH WILL RESULT IN A FALSE POSITIVE AND/OR THE URL WILL NOT RESOLVE. IT HAS BEEN TESTED AND IS ACCURATE, BUT NOT 100% ACCURATE. VERIFY THE OUTPUTS IF YOU ARE NOT SURE.**
+**THIS TOOL IS NOT PERFECT. THERE IS STILL ROOM FOR IMmeterPROVMENT, AND I AM WORKING ON ADDING NEW FEATURES AND REFINEMENTS. SOMETIMES A USERNAME SEARCH WILL RESULT IN A FALSE POSITIVE AND/OR THE URL WILL NOT RESOLVE. IT HAS BEEN TESTED AND IS ACCURATE, BUT NOT 100% serchACCURATE. VERIFY THE OUTPUTS IF YOU ARE NOT SURE.**
 
 ## Contributing
 1. Fork this repository`
