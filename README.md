@@ -3,11 +3,11 @@ ClatScope Info Tool – A versatile OSINT utility for retrieving geolocation, DN
 
 ![OSINT](https://github.com/user-attachments/assets/7ab0f57d-091b-46c7-92fd-db61dad5809a)
 
-**DONT WANT TO SET UP YOUR GCS AND HIBP API TO GET FULL FUNCTIONALITY OF CLATSCOPE INFO TOOL? STARTING JANUARY 12, 2024 A SUBSCRIPTION SERVICE IS AVAILABLE. YOU WILL BE PROVIDED WITH A CUSTOM API KEY THAT LOGS IP ADDRESS, USER AGENT, USAGE, AND OTHER DETAILS TO ENSURE THERE IS NO UNAUTHORIZED ACCESS OR MISUSE. SHARING IS PROHIBITED AND WILL RESULT IN AN IMMEDIATE REVOCATION OF THE KEY. TURN OFF YOUR VPN WHEN USING IT TO PREVENT AN AUTOMATIC BAN FOR IMPOSSIBLE TRAVEL / SHARING. YOUR SUBSCRIPTION IS VALID FOR 30 DAYS. IF YOU RENEW, YOU WILL BE ISSUED A NEW KEY AT THE START OF YOUR RENEWAL. KEYS ARE ROTATED MONTHLY AND ARE SINGLE USE AND MONITORED. EMAIL SKYLINE92X@PM.ME FOR DETAILS AND / OR VISIT https://buymeacoffee.com/clats97/e/357348 TO SUBSCRIBE.**
+**DONT WANT TO SET UP YOUR API KEYS TO GET FULL FUNCTIONALITY OF CLATSCOPE INFO TOOL? STARTING JANUARY 12, 2024 A SUBSCRIPTION SERVICE IS AVAILABLE. YOU WILL BE PROVIDED WITH A CUSTOM SCRIPT WITH API KEYS THAT LOGS IP ADDRESS, USER AGENT, USAGE, AND OTHER DETAILS TO ENSURE THERE IS NO UNAUTHORIZED ACCESS OR MISUSE. SHARING IS PROHIBITED AND WILL RESULT IN AN IMMEDIATE REVOCATION OF THE KEY. TURN OFF YOUR VPN WHEN USING IT TO PREVENT AN AUTOMATIC BAN FOR IMPOSSIBLE TRAVEL / SHARING. YOUR SUBSCRIPTION IS VALID FOR 30 DAYS. IF YOU RENEW, YOU WILL BE ISSUED A NEW KEY AT THE START OF YOUR RENEWAL. KEYS ARE ROTATED MONTHLY AND ARE SINGLE USE AND MONITORED. EMAIL SKYLINE92X@PM.ME FOR DETAILS AND / OR VISIT https://buymeacoffee.com/clats97/e/357348 TO SUBSCRIBE.**
 
 ![Screenshot 2025-01-14 161144](https://github.com/user-attachments/assets/947375f5-fe38-443e-bb2f-83b4393aa812)
 
-ClatScope is an OSINT tool that performs various lookups and analyses on provided data:
+ClatScope is an OSINT tool that performs various lookups and analyzes provided data:
 
 1.	**IP Address Lookups:**
 
@@ -100,7 +100,7 @@ When you run the script, it will present you with a menu. Simply type the number
 
 - **IN ORDER FOR THE PASSWORD STRENGTH ANALYZER TO WORK PROPERLY, YOU MUST OPEN CLATSCOPE INFO TOOL IN THE FOLDER THAT HAS "PASSWORDS.TXT"**
 
-- You will need to enter your own Google Custom Search, OpenAI, Botometer, Perplexity & a Have I been Pwned API key to use all the features in this tool (unless you subscribe to the above mentioned service).
+- You will need to enter your own Google Custom Search, OpenAI, Botometer, Perplexity & Have I been Pwned API key to use all the features in this tool (unless you subscribe to the above mentioned service).
 - If you want to use the password strength checker against a dictionary or known common-passwords file, place your dictionary file as passwords.txt in the same directory as the script. There is already a dictionary file in the installation package with millions of common passwords.
 - The script references a Google Custom Search API key (API_KEY, CX, and CLIENT_ID), an OpenAI API key, a Perplexity API key, a Botometer API key, and HIBP API key. If you want to use the features that query external services (like Google search or HIBP), you must obtain valid keys and place them in the script.
 - **Important:** If you do not have valid API keys, the related external queries (e.g. person search, reverse phone lookup, business search, travel risk search, Botometer search) will fail or return errors.
@@ -194,16 +194,17 @@ When you run the script, it will present you with a menu. Simply type the number
 ________________________________________
 
 
-**THIS TOOL IS NOT PERFECT. THERE IS STILL ROOM FOR IMmeterPROVMENT, AND I AM WORKING ON ADDING NEW FEATURES AND REFINEMENTS. SOMETIMES A USERNAME SEARCH WILL RESULT IN A FALSE POSITIVE AND/OR THE URL WILL NOT RESOLVE. IT HAS BEEN TESTED AND IS ACCURATE, BUT NOT 100% serchACCURATE. VERIFY THE OUTPUTS IF YOU ARE NOT SURE.**
+**THIS TOOL IS NOT PERFECT. THERE IS STILL ROOM FOR IMPROVMENT, AND I AM WORKING ON ADDING NEW FEATURES AND REFINEMENTS. SOMETIMES A USERNAME SEARCH WILL RESULT IN A FALSE POSITIVE AND/OR THE URL WILL NOT RESOLVE. IT HAS BEEN TESTED AND IS ACCURATE, BUT NOT 100% ACCURATE. VERIFY THE OUTPUTS IF YOU ARE NOT SURE.**
 
 ## Contributing
 1. Fork this repository`
-2. Create a new Pull Request  
+2. Create a new Pull Request
+3. Email me at skyline92x@pm.me for feature requests or ideas.
 
-We welcome any improvements or additional OSINT features!
+I welcome any improvements or additional OSINT features!
 
 ## License
 This project is released under the Apache 2.0 License.
 
-Copyright 2025 Joshua M Clatney (Clats97) 
+Copyright 2025 Joshua M Clatney (Clats97s ClatScope Info Tool) 
 
