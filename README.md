@@ -54,7 +54,7 @@ Throughout the script, a textual UI is presented, prompting the user for inputs 
 **Author:** Joshua M Clatney aka Clats97 (Ethical Pentesting Enthusiast)
 
 ## Description
-ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility script that queries public APIs, DNS records, and other online resources to gather and display information about IPs, domains, emails, phone numbers, and more. You will need a Google Custom Search API and a Have I Been Pwned API to take advantage of all the features ClatScope has to offer.
+ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility script that queries public APIs, DNS records, and other online resources to gather and display information about IPs, domains, emails, phone numbers, and more. You will need to enter the required API keys to take advantage of all the features ClatScope Info Tool v1.02 has to offer.
 
 ## Features
 1. **IP Information** – Extract IP geolocation, ISP, and Google Maps link.  
