@@ -85,7 +85,7 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 2. **Install Dependencies**:
     Open command prompt and write:
 
-   pip install requests pystyle phonenumbers dnspython email-validator beautifulsoup4 whois tqdm openai==0.28
+   pip install requests pystyle phonenumbers dnspython email-validator beautifulsoup4 lxml tqdm python-whois openai==0.28
 
    3. **Run the Script**:
     Click on the Python file or open it in Visual Studio Code 
