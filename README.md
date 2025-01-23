@@ -82,7 +82,15 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 16. **Travel Risk Search** - Provides a detailed, 40 parameter analysis of a geographical location.
 17. **Botometer Search** - Helps identify possible X/Twitter bots. The lower the score, the lower probability it is not a bod. A higher score indicates a higher probability that the account is a bot.
 18. **Business Search** - Provides details about a business.
-19. **Theme/Color Settings** – Adjust console output color.
+19. **Hudson Rock Email Search** - Searches for an email infected with an infostealer.
+20. **Hudson Rock Username Search** - Searches for a username infected with an infostealer.
+21. **Hudson Rock Domain Search** - Searches for a domain infected with an infostealer.
+22. **Hudson Rock IP Address Search** - Searches for an IP address infected with an infostealer.
+23. **Fact Check Search** - Verifies user inputted data.
+24. **Relationship Search** - Analyzes relationships between people and entities.
+25. **File Metadata Search** - Analyzes metadata from various file types.
+26. **Subdomain Search** - Checks a domain for subdomins.
+27. **Theme/Color Settings** – Adjust console output color.
 
 ## Installation
 1. **Clone the Repository (or download the zip)**:
