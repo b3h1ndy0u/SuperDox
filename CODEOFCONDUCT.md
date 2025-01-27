@@ -121,6 +121,8 @@ https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 Community Impact Guidelines were inspired by [Mozilla's code of conduct
 enforcement ladder](https://github.com/mozilla/diversity).
 
+Copyright 2025 Joshua M Clatney (Clats97)
+
 [homepage]: https://www.contributor-covenant.org
 
 For answers to common questions about this code of conduct, see the FAQ at
