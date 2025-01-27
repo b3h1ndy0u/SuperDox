@@ -73,23 +73,31 @@ ClatScope Info Tool is an all-in-one OSINT (Open-Source Intelligence) utility sc
 8. **Person Search** - Look up public details about a person.   
 9. **WHOIS Lookup** – Fetch domain registration details.  
 10. **Password Strength Check** – Rate your password’s strength based on multiple criteria.
-11. **Reverse Phone Search** - Gets references from a number and extracts data from Google.
-12. **Robots.txt / Sitemap.xml Check** - Finds a websites robots.txt and Sitemp.xml files.
-13. **SSL Certificate Search** - Finds a webpage's SSL certificate information 
-14. **DNSBL Search** - Gets blacklist information on a URL
-15. **Website Metadata Fetch** - Retrieves meta tags and more from a website.
-16. **Travel Risk Search** - Provides a detailed, 40 parameter analysis of a geographical location.
-17. **Botometer Search** - Helps identify possible X/Twitter bots. The lower the score, the lower probability it is not a bod. A higher score indicates a higher probability that the account is a bot.
-18. **Business Search** - Provides details about a business.
-19. **Hudson Rock Email Search** - Searches for an email infected with an infostealer.
-20. **Hudson Rock Username Search** - Searches for a username infected with an infostealer.
-21. **Hudson Rock Domain Search** - Searches for a domain infected with an infostealer.
-22. **Hudson Rock IP Address Search** - Searches for an IP address infected with an infostealer.
-23. **Fact Check Search** - Verifies user inputted data.
-24. **Relationship Search** - Analyzes relationships between people and entities.
-25. **File Metadata Search** - Analyzes metadata from various file types.
-26. **Subdomain Search** - Checks a domain for subdomins.
-27. **Theme/Color Settings** – Adjust console output color.
+11. **Username Search** - Checks websites for account details, with a different approach compared to the Deep Account Search
+12. **Reverse Phone Search** - Gets references from a number and extracts data from Google.
+13. **Robots.txt / Sitemap.xml Check** - Finds a websites robots.txt and Sitemp.xml files.
+14. **SSL Certificate Search** - Finds a webpage's SSL certificate information 
+15. **DNSBL Search** - Gets blacklist information on a URL
+16. **Website Metadata Fetch** - Retrieves meta tags and more from a website.
+17. **Travel Risk Search** - Provides a detailed, 40 parameter analysis of a geographical location.
+18. **Botometer Search** - Helps identify possible X/Twitter bots. The lower the score, the lower probability it is not a bod. A higher score indicates a higher probability that the account is a bot.
+19. **Business Search** - Provides details about a business.
+20. **Hudson Rock Email Search** - Searches for an email infected with an infostealer.
+21. **Hudson Rock Username Search** - Searches for a username infected with an infostealer.
+22. **Hudson Rock Domain Search** - Searches for a domain infected with an infostealer.
+23. **Hudson Rock IP Address Search** - Searches for an IP address infected with an infostealer.
+24. **Fact Check Search** - Verifies user inputted data.
+25. **Relationship Search** - Analyzes relationships between people and entities.
+26. **File Metadata Search** - Analyzes metadata from various file types.
+27. **Subdomain Search** - Checks a domain for subdomains.
+28. **Domain Search** - Domain info through Hunter.
+29. **Email Search** - Email info search through Hunter.
+30. **Email Verify** - Verifies an email through Hunter.
+31. **Company Search** - Gets company info through Hunter.
+32. **Person Info Search** - Retrieves person info through Hunter.
+33. **Combined Search** - Performs a combined enrichment.
+34. **Email Search** - Dees a reverse email search through CastrickClues
+35. **Theme/Color Settings** – Adjust console output color.
 
 ## Installation
 1. **Clone the Repository (or download the zip)**:
@@ -221,5 +229,5 @@ I welcome any improvements or additional OSINT features!
 ## License
 This project is released under the Apache 2.0 License.
 
-Copyright 2025 Joshua M Clatney (Clats97s ClatScope Info Tool) 
+Copyright 2025 Joshua M Clatney (Clats97) 
 
